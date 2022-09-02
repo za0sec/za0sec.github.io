@@ -8026,7 +8026,7 @@ link.active,
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #1a1a1a;
 }
 
 .bg-black {
@@ -11530,6 +11530,7 @@ body {
   }
   #mainNav.navbar-shrink {
     background-color: #1a1a1a;
+    border-bottom: 0.19rem solid #151515; 
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: rgba(255, 255, 255, 0.5);
@@ -11623,7 +11624,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 3rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
