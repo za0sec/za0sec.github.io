@@ -107,3 +107,4 @@ function consoleTex(words, id, colors) {
   }, 400)
 }
 
+$('.carousel').carousel();
