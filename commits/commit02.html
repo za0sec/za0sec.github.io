@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-	<link href="css/javi.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+	<link href="../css/javi.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
     </head>
@@ -22,16 +22,15 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">za0sec</a>
+                <a class="navbar-brand" href="../index.html">za0sec</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Commit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,53 +40,58 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">                 
    		    <div class="text-center">
-                        <h1 style="padding-bottom:22%;" class="mx-auto my-0 text-uppercase">Personal commits</h1>
-                        <a class="btn btn-primary" href="#about">Commits</a>                  
+                        <h1 style="padding-bottom:22%;" class="mx-auto my-0 text-uppercase">Commit n&deg;2</h1>
+                        <a class="btn btn-primary" href="#about">Press me</a>                  
   		</div>
                 </div>
             </div>
         </header>
         <!-- Projects-->
-        <section class="proyects-section bg-dark" id="about"><br>            
+        <section class="projects-section bg-dark" id="about">            
 <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
 <br><br><br><br><br><br>
-		<div class="container px-4 px-lg-5 d-flex h-100 ">
-                <div class="d-flex ">
-		<section class="maint">
+		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-left">
+			<pre class="js">
+Hello Mate, my name is za0s.
 
-  <a style="" href="commits/commit01.html"><div class="wrap wrap--1">
-      <div class="containert container--1">
-	<p>Commit01.txt</p>
-    </div>
-  </div></a>
-  <div class="wrap wrap--2">
-    <div class="containert container--2">
-      <p>01. Normal</p>
-    </div>
-  </div>
-  <div class="wrap wrap--3">
-    <div class="containert container--3">
-      <p>01. Normal</p>
-    </div>
-  </div>
-  <div class="wrap wrap--4">
-    <div class="containert container--4">
-      <p>01. Normal</p>
-    </div>
-  </div>
+Today I learned a lot. Well, not today but in these couple days. I will give you a list of things I have been learning:
 
+- Cross Site Scripting (HTML & XSS Inyection)
+- CSRF (Cross-Site Request Forgery)
+- SSRF (Server-Side Request Forgery)
+- SQL Inyection
+- Padding Oracle Attack
 
+Im not good at this things, but, before this, I didnt even knew it existed. Im not good, but I will be good.
 
+Im having a lot of frustration while learning because its difficult. Why?
+Sometimes you see someone penetrating a machine and you say, WOW, I can do that.
+Well, let me tell you, you cant. Im not saying we are terrible pentesters. Im saying that is difficult.
+You see someone do what he is doing because he learned about it. You cant pretend to watch a simple youtube video and spontaneously
+start penetrating. NO, It doesent work that way, you have to understand what you are doing.
 
-</section>
-                
-</div>
+I started penetrating machines at <a href="https://www.hackthebox.com">Hack The Box</a>, (HTB) I love it.
+HTB is a company that gives you weekly machines with vulnerabilities for you to penetrate them.
+Im telling you, its not easy. Ive successfuly penetrated 2 machines already, not alone, with a little help.
+I strongly recommend to access this platform and try. You will not do it at the first time, not at your second time and not even at
+your third time. Maybe you just have to be penetrating almost 15 machines until you learn. But you will.
+
+Im happy, I would like to work with cybersecurity one day. And I will.
+
+Dont be afraid, it will be worth it.
+ 
+Goodbye mate. ( 2nd commit )
+za0s
+</pre>
+                </div>
+                </div>
             </div>
-<a class="btn btn-primary" style="margin-left: 44vw;" href="commits.html">See all commits</a>
-
+<a class="btn btn-primary" style="margin-left: 44vw;" href="commit03.html">Next commit --></a>
       </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section id="contact" class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -133,13 +137,12 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/javic.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/javi.js"></script>
 	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-	<script src="js/nuevoo.js"></script>    
-</body>
+    </body>
 </html>
