@@ -8,16 +8,18 @@
 
 // Thank You for Viewing
 
-class parallaxTiltEffect {
 
-  constructor({element, tiltEffect}) {
+
+class parallaxTiltEffecte {
+
+  constructor({element, tiltEffecte}) {
 
     this.element = element;
-    this.containert = this.element.querySelector(".containert");
+    this.containertt = this.element.querySelector(".containertt");
     this.size = [300, 360];
     [this.w, this.h] = this.size;
 
-    this.tiltEffect = tiltEffect;
+    this.tiltEffecte = tiltEffecte;
 
     this.mouseOnComponent = false;
 
@@ -37,7 +39,7 @@ class parallaxTiltEffect {
     let X;
     let Y;
 
-    if (this.tiltEffect === "reverse") {
+    if (this.tiltEffecte === "reverse") {
       X = ((offsetX - (this.w/2)) / 3) / 3;
       Y = (-(offsetY - (this.h/2)) / 3) / 3;
     }
@@ -53,7 +55,7 @@ class parallaxTiltEffect {
 
   handleMouseEnter() {
     this.mouseOnComponent = true;
-    this.containert.classList.add("container--active");
+    this.containertt.classList.add("container--active");
   }
 
   handleMouseLeave() {
@@ -62,7 +64,7 @@ class parallaxTiltEffect {
   }
 
   defaultStates() {
-    this.containert.classList.remove("container--active");
+    this.containertt.classList.remove("container--active");
     this.setProperty('--rY', 0);
     this.setProperty('--rX', 0);
     this.setProperty('--bY', '80%');
@@ -70,7 +72,7 @@ class parallaxTiltEffect {
   }
 
   setProperty(p, v) {
-    return this.containert.style.setProperty(p, v);
+    return this.containertt.style.setProperty(p, v);
   }
 
   init() {
@@ -83,26 +85,9 @@ class parallaxTiltEffect {
 
 const $ = e => document.querySelector(e);
 
-const wrap1 = new parallaxTiltEffect({
-  element: $('.wrap--1'),
-  tiltEffect: 'reverse'
-});
-
-const wrap2 = new parallaxTiltEffect({
+const wrap2 = new parallaxtiltEffecte({
   element: $('.wrap--2'),
-  tiltEffect: 'reverse'
+  tiltEffecte: 'reverse'
 });
 
-const wrap3 = new parallaxTiltEffect({
-  element: $('.wrap--3'),
-  tiltEffect: 'reverse'
-});
-const wrap4 = new parallaxTiltEffect({
-  element: $('.wrap--4'),
-  tiltEffect: 'reverse'
-});
-const wrap5 = new parallaxTiltEffect({
-  element: $('.wrap--5'),
-  tiltEffect: 'reverse'
-});
 
